@@ -38,7 +38,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 
 			getAllContacts: () =>{
-				fetch ('https://playground.4geeks.com/contact/agendas/DavidPadilla', {
+				fetch ('https://playground.4geeks.com/contact/agendas/StephanieMToyo', {
 					method: "GET",
 				})
 				.then((response)=> {
@@ -58,7 +58,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			createAgenda: () =>{
 				// console.log(fullName,email,address,phone);
 			
-				fetch ('https://playground.4geeks.com/contact/agendas/DavidPadilla', {
+				fetch ('https://playground.4geeks.com/contact/agendas/StephanieMToyo', {
 					method: "POST",
 					headers: {
 						"content-type": "application/json"
@@ -78,7 +78,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			createContact: (fullName,email,phone,address) =>{
 				// console.log(fullName,email,address,phone);
 			
-				fetch ('https://playground.4geeks.com/contact/agendas/DavidPadilla/contacts', {
+				fetch ('https://playground.4geeks.com/contact/agendas/StephanieMToyo/contacts', {
 					method: "POST",
 					body: JSON.stringify(				
 						{
@@ -105,7 +105,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			deleteContact: (id) =>{
 				// console.log(fullName,email,address,phone);
 			
-				fetch ('https://playground.4geeks.com/contact/agendas/DavidPadilla/contacts/'+id, {
+				fetch ('https://playground.4geeks.com/contact/agendas/StephanieMToyo/contacts/'+id, {
 					method: "DELETE",
 					headers: {
 						"content-type": "application/json"
@@ -125,7 +125,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			editContact: (fullName,email,phone,address,id) =>{
 				console.log(fullName,email,address,phone,id);
 			
-				fetch ('https://playground.4geeks.com/contact/agendas/DavidPadilla/contacts/'+id, {
+				fetch ('https://playground.4geeks.com/contact/agendas/StephanieMToyo/contacts/'+id, {
 					method: "PUT",
 					body: JSON.stringify(				
 						{
